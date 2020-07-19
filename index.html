@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script type="text/javascript" src="d3/d3.v3.js"></script>
 
-    <title>d3 Examples</title>
+    <title>Piki 4AD report</title>
 </head>
 <body>
 
@@ -13,21 +13,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <img src="resources/d3logo.png">
+                <img src="resources/pikilogo.png" width='50'>
             </div>
             <div class="col-md-10">
-                <h1 class="logo">D3 Examples</h1>
-                <h4>Richard Dalton</h4>
+                <h1 class="logo">Artists</h1>
                 <div class="btn-group btn-group-md" role="group" aria-label="...">
                     <a href="index.html" class="btn btn-default" role="button">Home</a>
-                    <a href="svg.html" class="btn btn-default" role="button">SVG</a>
-                    <a href="barChart.html" class="btn btn-default" role="button">Bar</a>
-                    <a href="pieChart.html" class="btn btn-default" role="button">Pie</a>
-                    <a href="bubbleChart.html" class="btn btn-default" role="button">Bubble</a>
-                    <a href="pikivenue.html" class="btn btn-default" role="button">Piki Venue</a>
-                    <a href="force.html" class="btn btn-default" role="button">Force</a>
-                    <a href="globe.html" class="btn btn-default" role="button">Globe</a>
-                    <a href="http://www.d3js.org" class="btn btn-default" role="button">D3.js</a>
+                    <a href="pikiartists_131.html" class="btn btn-default" role="button">Obedeer    </a>
                 </div>
             </div>
         </div>
@@ -44,60 +36,7 @@
         <div id="draw_here"></div>
     </div>
 
-    <div class="col-md-6">
-<pre>
-    data = [
-        {"key": "First Heading", "value":"First Paragraph"},
-        {"key": "Second Heading", "value":"Second Paragraph"},
-        {"key": "Third Heading", "value":"Third Paragraph"},
-        {"key": "Fourth Heading", "value":"Fourth Paragraph"},
-        {"key": "Fifth Heading", "value":"Fifth Paragraph"},
-    ];
-
-    //Create SVG element
-    var doc = d3.select("#draw_here");
-
-    var doc_item = doc.selectAll("div")
-            .data(data)
-            .enter()
-            .append("div");
-
-    doc_item.append("h4").text(function (d) {
-                return d.key;
-            });
-
-    doc_item.append("p").text(function (d) {
-        return d.value;
-    })
-</pre>
-    </div>
-</div>
-
-<script>
-    data = [
-        {"key": "First Heading", "value":"First Paragraph"},
-        {"key": "Second Heading", "value":"Second Paragraph"},
-        {"key": "Third Heading", "value":"Third Paragraph"},
-        {"key": "Fourth Heading", "value":"Fourth Paragraph"},
-        {"key": "Fifth Heading", "value":"Fifth Paragraph"},
-    ];
-
-    //Create SVG element
-    var doc = d3.select("#draw_here");
-
-    var doc_item = doc.selectAll("div")
-            .data(data)
-            .enter()
-            .append("div");
-
-    doc_item.append("h4").text(function (d) {
-                return d.key;
-            });
-
-    doc_item.append("p").text(function (d) {
-        return d.value;
-    })
-</script>
+    
 
 </body>
 </html>
